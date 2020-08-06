@@ -1,0 +1,13 @@
+#left-col-big {
+    background-color: silver;
+}
+
+#head-shot {
+    /*max-width: 50%;*/
+}
+
+body {
+/*    Scrollspy needs position: relative*/
+    position: relative;
+}
+
