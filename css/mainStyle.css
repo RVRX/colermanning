@@ -27,19 +27,27 @@ nav {
 .secondary {
     /*color: #8c8c8c;*/
     /*color: rgba(60,49,193,0.40);*/
-    color: #6c757d !important;
+    color: #404040 !important;
 }
 
 h1,h2,h3,h4 {
-    color: white;
+    color: #D9D9D9;
 }
 
 h2 {
-    color: #3c31c1;
+    color: #595959;
 }
 
 p {
-    color: #8c8c8c;
+    color: #D9D9D9;
+}
+
+h4 {
+    color: #262626;
+}
+
+a,a:active,a:hover {
+    color: #D9D9D9;
 }
 
 hr {
@@ -118,4 +126,8 @@ html {
 
 #socials {
     font-size: x-large;
+}
+
+footer {
+    background-color: rgb(18, 18, 18);
 }
