@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mainStyle.css">
 <!--    &lt;!&ndash; CSS only &ndash;&gt;-->
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">-->
@@ -32,26 +32,33 @@ So it will be a one page, website?
     Maybe with exception of the projects, which will have a see more section
 -->
 
+<!--Header-->
+<header class="hero">
 
-
-<!--Navigation Bar-->
-<nav class="navbar navbar-expand-sm navbar-dark" role="navigation">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-container" aria-controls="navbar-container" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand"><img src="images/prof-pic_HighRez%20(Small).png" height="30px" alt="head shot" class="rounded-circle"></a>
-        <div class="navbar-collapse collapse" id="navbar-container"> <!--Collapsable Section-->
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#xp">Job Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            </ul>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-container" aria-controls="navbar-container" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="images/prof-pic_HighRez%20(Small).png" height="30px" alt="head shot" class="rounded-circle"></a>
+            <div class="navbar-collapse collapse" id="navbar-container"> <!--Collapsable Section-->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#xp">Job Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
+    <!--Hero Text-->
+    <div class="hero-center" id="name">
+        <h1 class="animate__animated animate__fadeIn animate__slower">Cole Manning</h1>
+    </div>
+
+</header>
 <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
 <!--    <div class="container-fluid">-->
 
@@ -106,16 +113,12 @@ So it will be a one page, website?
 
 <!--Main Content-->
 <main role="main" class="container-fluid">
-    <div class="container text-center">
-        <h1>Cole Manning</h1>
-        <hr/>
-    </div>
-    <div class="container" id="about-container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" id="about-container">
         <div class="row">
-            <div class="col"><img src="images/prof-pic_HighRez.png" alt="Head Shot of Cole." class="img-fluid rounded-lg"></div>
+            <div class="col"><img src="images/prof-pic_HighRez.png" alt="Head Shot of Cole." class="img-fluid rounded-lg px-5"></div>
             <div class="col">
                 <h2 id="about">About</h2>
-                <p>I am a rising Sophomore (Class of '23) at Worcester Polytechnic Institute, pursing a degree in Computer Science. Looking to minor in Management Information Systems (MIS)</p>
+                <p>I am a 20-year-old College student currently attending Worcester Polytechnic Institute (Class of ’23), majoring in Computer science and pursuing a Management Information Systems (MIS) minor. To see the classes I’ve taken thus far at WPI, click here. I’ve been working on websites since 2015, and have experience with both coding from scratch and with some of the popular web builders such as Weebly and Squarespace. Outside of development on the web, I also have experience in C and Java.</p>
             </div>
         </div>
         <hr/>
@@ -141,7 +144,7 @@ So it will be a one page, website?
 
         <h3>Computer Science, <span class="secondary">Worcester Polytechnic Institute</span></h3>
         <h4>Class of 2023</h4>
-        <p>Current GPA of X.XX (as of XXX XX). Expecting to Minor in Management Information Systems (MIS)</p>
+        <p>GPA of 3.60 in Freshman year. Expecting to Minor in Management Information Systems (MIS)</p>
 
         <h3>High School Diploma, <span class="secondary">Francis Parker Charter Essential School</span></h3>
         <h4>Class of 2019</h4>
@@ -205,6 +208,8 @@ So it will be a one page, website?
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.esm.js"></script>
 <script src="js/bootstrap.js"></script>
+<!--JQuery-->
+<!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
 <!--AOS Scripts-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--Initialize AOS Library-->
