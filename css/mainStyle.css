@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: rgba(0,0,0,0.11);
+    background-color: rgb(18, 18, 18);
 }
 
 .nav-link, .nav-link:hover {
@@ -106,3 +106,16 @@ html {
 /*    transform: rotate(20deg);*/
 /*}*/
 
+.navbar {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#socials {
+    font-size: x-large;
+}

@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mainStyle.css">
-<!--    &lt;!&ndash; CSS only &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">-->
-<!--    &lt;!&ndash; JavaScript and dependencies &ndash;&gt;-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!--
     Libraries Used:
@@ -36,7 +32,7 @@ So it will be a one page, website?
 <header class="hero">
 
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-sm navbar-dark" role="navigation">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-container" aria-controls="navbar-container" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,10 +40,10 @@ So it will be a one page, website?
             <a href="#" class="navbar-brand"><img src="images/prof-pic_HighRez%20(Small).png" height="30px" alt="head shot" class="rounded-circle"></a>
             <div class="navbar-collapse collapse" id="navbar-container"> <!--Collapsable Section-->
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#xp">Job Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-anchorpoint">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#xp-anchorpoint">Job Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edu-anchorpoint">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects-anchorpoint">Projects</a></li>
                 </ul>
             </div>
         </div>
@@ -113,17 +109,24 @@ So it will be a one page, website?
 
 <!--Main Content-->
 <main role="main" class="container-fluid">
+    <span id="about-anchorpoint"></span>
     <div class="container" data-aos="fade-up" data-aos-duration="1000" id="about-container">
         <div class="row">
             <div class="col"><img src="images/prof-pic_HighRez.png" alt="Head Shot of Cole." class="img-fluid rounded-lg px-5"></div>
             <div class="col">
                 <h2 id="about">About</h2>
-                <p>I am a 20-year-old College student currently attending Worcester Polytechnic Institute (Class of ’23), majoring in Computer science and pursuing a Management Information Systems (MIS) minor. To see the classes I’ve taken thus far at WPI, click here. I’ve been working on websites since 2015, and have experience with both coding from scratch and with some of the popular web builders such as Weebly and Squarespace. Outside of development on the web, I also have experience in C and Java.</p>
+                <p>I am a 20-year-old College student currently attending Worcester Polytechnic Institute (Class of ’23), majoring in Computer science and pursuing a Management Information Systems (MIS) minor. To see the classes I’ve taken thus far at WPI, click here. I’ve been working on websites since 2015, and have experience with both coding from scratch and popular web builders such as Weebly and Squarespace. Outside of web development, I also have experience in C and Java.</p>
+                <p id="socials" class="text-center">
+                    <a href="https://github.com/RVRX"><i class="fab fa-github mx-3"></i></a>
+                    <a href="https://www.linkedin.com/in/colemanning/"><i class="fab fa-linkedin-in mx-3"></i></a>
+                    <a href="mailto:cmanning@wpi.edu"><i class="far fa-envelope mx-3"></i></a>
+                </p>
             </div>
         </div>
         <hr/>
     </div>
-    <div class="container" id="xp-container">
+    <span id="xp-anchorpoint"></span>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" id="xp-container">
         <h2 id="xp">Job Experience</h2>
 
         <h3>Computer Lab Assistant, <span class="secondary">Worcester Polytechnic Institute</span></h3>
@@ -139,7 +142,8 @@ So it will be a one page, website?
         <p>General IT support to teachers, and maintenance tasks including, running new Ethernet cable, replacing and re-imaging hard drives, and cleaning & troubleshooting of school computers, printers, and miscellaneous technology. This position was held full time during summer break, along with occasional weekdays during the school year for when the IT team needed a hand.</p>
         <hr/>
     </div>
-    <div class="container" id="edu-container">
+    <span id="edu-anchorpoint"></span>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" id="edu-container">
         <h2 id="edu">Education</h2>
 
         <h3>Computer Science, <span class="secondary">Worcester Polytechnic Institute</span></h3>
@@ -153,7 +157,8 @@ So it will be a one page, website?
         </p>
         <hr/>
     </div>
-    <div class="container" id="projects-container">
+    <span id="projects-anchorpoint"></span>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" id="projects-container">
         <h2 id="projects">Projects</h2>
 
         <h3>Websites</h3>
@@ -209,13 +214,13 @@ So it will be a one page, website?
 <script src="js/bootstrap.esm.js"></script>
 <script src="js/bootstrap.js"></script>
 <!--JQuery-->
-<!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!--AOS Scripts-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--Initialize AOS Library-->
 <script>
     AOS.init();
 </script>
-<link rel="stylesheet" href="css/mainStyle.css">
+<script src="js/scripts.js"></script>
 </body>
 </html>
