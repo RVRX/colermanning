@@ -8,13 +8,46 @@
 
 body {
 /*    Scrollspy needs position: relative*/
-    position: relative;
+/*    position: relative;*/
+    background-color: #121212;
 }
 
 nav {
-    background-color: rgba(0,0,0,0.66);
+    background-color: rgba(0,0,0,0.11);
 }
 
 .nav-link, .nav-link:hover {
     color: white;
 }
+
+.navbar-toggler {
+
+}
+
+.secondary {
+    /*color: #8c8c8c;*/
+    color: rgba(60,49,193,0.40);
+}
+
+h1,h2,h3,h4 {
+    color: white;
+}
+
+h2 {
+    color: #3c31c1;
+}
+
+p {
+    color: #8c8c8c;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width: 100%;
+}
+
