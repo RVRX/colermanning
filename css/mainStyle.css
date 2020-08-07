@@ -185,3 +185,18 @@ footer {
 .close,.close:hover {
     color: white;
 }
+
+/*Remove left sidebar when under 767px*/
+@media only screen and (max-width: 767px) {
+    #head-shot-col {
+        display: none;
+    }
+    /*#main-col-right {*/
+    /*    -ms-flex: 0 0 100%;*/
+    /*    flex: 0 0 100%;*/
+    /*    max-width: 100%;*/
+    /*}*/
+    /*#logo-png {*/
+    /*    max-height: 200px;*/
+    /*}*/
+}
