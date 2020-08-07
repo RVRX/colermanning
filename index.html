@@ -117,7 +117,7 @@ So it will be a one page, website?
             <div class="col"><img src="images/prof-pic_HighRez.png" alt="Head Shot of Cole." class="img-fluid rounded-lg px-lg-5"></div>
             <div class="col">
                 <h2 id="about">About</h2>
-                <p>I am a 20-year-old College student currently attending Worcester Polytechnic Institute (Class of ’23), majoring in Computer science and pursuing a Management Information Systems (MIS) minor. To see the classes I’ve taken thus far at WPI, click here. I’ve been working on websites since 2015, and have experience with both coding from scratch and popular web builders such as Weebly and Squarespace. Outside of web development, I also have experience in C and Java.</p>
+                <p>I'm a 20-year-old College student currently attending Worcester Polytechnic Institute (Class of ’23), majoring in Computer science and pursuing a Management Information Systems (MIS) minor. To see the classes I’ve taken thus far at WPI, click here. I’ve been working on websites since 2015, and have experience with both coding from scratch and popular web builders such as Weebly and Squarespace. Outside of web development, I also have experience in C and Java.</p>
                 <p id="socials" class="text-center">
                     <a href="https://github.com/RVRX"><i class="fab fa-github mx-sm-3"></i></a>
                     <a href="https://www.linkedin.com/in/colemanning/"><i class="fab fa-linkedin-in mx-sm-3"></i></a>
@@ -155,7 +155,7 @@ So it will be a one page, website?
         <div class="container item my-lg-5">
             <h3>Computer Science, <span class="secondary">Worcester Polytechnic Institute</span></h3>
             <h4>Class of 2023</h4>
-            <p>GPA of 3.60 in Freshman year. Expecting to Minor in Management Information Systems (MIS)</p>
+            <p>GPA of 3.60 in Freshman year. Expecting to Minor in Management Information Systems (MIS).</p>
         </div>
         <div class="container item my-5">
             <h3>High School Diploma, <span class="secondary">Francis Parker Charter Essential School</span></h3>
@@ -182,9 +182,10 @@ So it will be a one page, website?
                         <h5 class="card-title">Skyborne.net</h5>
                         <h6 class="card-subtitle text-muted mb-2">2015 - Present</h6>
                         <p class="card-text">A Website for The Skyborne, a Guns of Icarus Online clan.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#skyborneModal">Details</a>
                     </div>
                 </div>
+
 
                 <div class="card m-2" style="width: 18rem;">
                     <img src="images/projects/parkerprojects/Screenshot_2020-08-06%20Parker%20Projects(1).png" class="card-img-top" alt="...">
@@ -192,7 +193,18 @@ So it will be a one page, website?
                         <h5 class="card-title">Parkerprojects.info</h5>
                         <h6 class="card-subtitle text-muted mb-2">2018 - 2019 (live on github)</h6>
                         <p class="card-text">A web app to display my peer's Senior Projects.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#parkerprojectsModal">Details</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Coming Soon...</text></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <h6 class="card-subtitle text-muted mb-2">date</h6>
+                        <p class="card-text">description.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#fillerModal">Details</a>
                     </div>
                 </div>
 
@@ -202,17 +214,7 @@ So it will be a one page, website?
                         <h5 class="card-title">Parkerprojects.info</h5>
                         <h6 class="card-subtitle text-muted mb-2">2018 - 2019 (live on github)</h6>
                         <p class="card-text">A web app to display my peer's Senior Projects.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
-                    </div>
-                </div>
-
-                <div class="card m-2" style="width: 18rem;">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Coming Soon...</text></svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Parkerprojects.info</h5>
-                        <h6 class="card-subtitle text-muted mb-2">2018 - 2019 (live on github)</h6>
-                        <p class="card-text">A web app to display my peer's Senior Projects.</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#fillerModal">Details</a>
                     </div>
                 </div>
             </div>
@@ -245,6 +247,8 @@ So it will be a one page, website?
             </div>
         </div>
         <hr/>
+        <!--Modals-->
+
     </div>
 </main>
 
@@ -278,6 +282,52 @@ So it will be a one page, website?
         </div>
     </div>
 </footer>
+<!--Modals-->
+<div class="modal fade" id="skyborneModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="skyborneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropSkyborneLabel">About Skyborne.net</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Blandit libero volutpat sed cras ornare arcu dui. Ullamcorper malesuada proin libero nunc consequat interdum varius. Eu tincidunt tortor aliquam nulla. Nam at lectus urna duis convallis convallis tellus id interdum. Nisl nunc mi ipsum faucibus. Sit amet cursus sit amet dictum sit amet. Sed nisi lacus sed viverra tellus in hac habitasse platea. Pretium fusce id velit ut. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Nunc mi ipsum faucibus vitae. Ipsum dolor sit amet consectetur adipiscing elit duis. Enim lobortis scelerisque fermentum dui faucibus in ornare. Sed risus pretium quam vulputate dignissim suspendisse in est ante.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="parkerprojectsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="parkerprojectsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropParkerprojectsLabel">About Parkerprojects.info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Blandit libero volutpat sed cras ornare arcu dui. Ullamcorper malesuada proin libero nunc consequat interdum varius. Eu tincidunt tortor aliquam nulla. Nam at lectus urna duis convallis convallis tellus id interdum. Nisl nunc mi ipsum faucibus. Sit amet cursus sit amet dictum sit amet. Sed nisi lacus sed viverra tellus in hac habitasse platea. Pretium fusce id velit ut. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Nunc mi ipsum faucibus vitae. Ipsum dolor sit amet consectetur adipiscing elit duis. Enim lobortis scelerisque fermentum dui faucibus in ornare. Sed risus pretium quam vulputate dignissim suspendisse in est ante.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="fillerModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="fillerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropFillerLabel">Filler Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Blandit libero volutpat sed cras ornare arcu dui. Ullamcorper malesuada proin libero nunc consequat interdum varius. Eu tincidunt tortor aliquam nulla. Nam at lectus urna duis convallis convallis tellus id interdum. Nisl nunc mi ipsum faucibus. Sit amet cursus sit amet dictum sit amet. Sed nisi lacus sed viverra tellus in hac habitasse platea. Pretium fusce id velit ut. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Nunc mi ipsum faucibus vitae. Ipsum dolor sit amet consectetur adipiscing elit duis. Enim lobortis scelerisque fermentum dui faucibus in ornare. Sed risus pretium quam vulputate dignissim suspendisse in est ante.
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Bootstrap Scripts-->
 <script src="js/bootstrap.bundle.js"></script>

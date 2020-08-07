@@ -10,10 +10,11 @@ body {
 /*    Scrollspy needs position: relative*/
 /*    position: relative;*/
     background-color: #121212;
+    color: #D9D9D9;
 }
 
 nav {
-    background-color: rgb(18, 18, 18);
+    /*background-color: rgb(18, 18, 18);*/
 }
 
 .nav-link, .nav-link:hover {
@@ -131,4 +132,56 @@ html {
 footer {
     /*background-color: rgb(18, 18, 18);*/
     background-color: #161718;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:hover + .btn-primary:focus {
+    background-color: #595959;
+    border-color: #595959;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #595959;
+    border-color: #595959;
+    box-shadow: 0 0 0 0.2rem rgba(101, 101, 101, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #121212;
+    background-clip: padding-box;
+    border: 1px solid rgb(18, 18, 18);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #333;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #333;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+.close,.close:hover {
+    color: white;
 }
