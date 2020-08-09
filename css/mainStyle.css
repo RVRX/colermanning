@@ -212,3 +212,8 @@ footer {
 .no-style {
     text-decoration: none;
 }
+
+.card {
+    padding-left: 0;
+    padding-right: 0;
+}
