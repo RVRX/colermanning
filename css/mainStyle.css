@@ -193,7 +193,7 @@ footer {
     /*}*/
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .modifiedBootstrap__my-lg-6 {
         /*margin-top: 3rem !important;*/
         /*margin-bottom: 3rem !important;*/
@@ -207,4 +207,8 @@ footer {
         margin-top: 10rem !important;
         margin-bottom: 10rem !important;
     }
+}
+
+.no-style {
+    text-decoration: none;
 }
