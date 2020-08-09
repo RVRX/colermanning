@@ -29,6 +29,9 @@ TODO
     - make cards look better.
     - fix off center (on mobile) cards.
     - optimize libraries/scripts
+    *
+    - "Is there a way to open the site up with photo & bio. Insert name in header instead of about"
+    - "grey sub headings hard to read"
 -->
 
 <!--Header-->
@@ -53,12 +56,21 @@ TODO
 
     <!--Hero Text-->
     <div class="hero-center" id="name">
-        <h1 class="animate__animated animate__fadeIn animate__slower">Cole Manning</h1>
+        <h1 class="animate__animated animate__fadeIn animate__slow">Cole Manning</h1>
+        <p class="animate__animated animate__backInUp secondary">Subheading</p>
     </div>
+    <a href="#about-anchorpoint">
+        <div class="hero-bottom animate__animated animate__shakeY animate__repeat-3 animate__slower">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+    </a>
 </header>
 
 <!--Main Content-->
-<main role="main" class="container-fluid">
+<main role="main" class="container-fluid mt-5">
 
     <span id="about-anchorpoint"></span>
     <div class="container" data-aos="fade-up" data-aos-duration="1000" id="about-container">
@@ -230,6 +242,7 @@ TODO
                     <p class="footer-header">External Links</p>
                     <a class="footer-item">linkedin.com/in/colemanning/</a><br/>
                     <a class="footer-item">https://github.com/RVRX</a><br/>
+                    <a class="footer-item">resume download</a><br/>
                 </div>
             </div>
         </div>

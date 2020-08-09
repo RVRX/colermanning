@@ -59,8 +59,8 @@ hr {
     text-align: center;
     height: 5px;
     width: 100%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    /*margin-top: 10rem;*/
+    /*margin-bottom: 10rem;*/
 }
 
 .hero { /*Taken From AOS main-page. I liked the hero image. ;) */
@@ -82,6 +82,15 @@ hr {
     transform: translate(0, -50%);
 }
 
+.hero-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 5%; /*distance from bottom*/
+    cursor: pointer;
+    left: 0; /*not sure why, but doesnt work without this, MDN ex's have a left!right as well*/
+    padding: 10% 10% 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -97,23 +106,6 @@ html {
     /*border: 1px solid hsl(245, 60%, 47%);*/
     border-radius: 0.25rem;
 }
-
-/*body::before {*/
-/*    position: fixed;*/
-/*    top: 500px;*/
-/*    left: -100px;*/
-/*    bottom: 0;*/
-/*    content: '';*/
-/*    width: 400px;*/
-/*    height: 400px;*/
-/*    border: 2px solid rgba(255, 255, 255, 0.05);*/
-/*    z-index: -1;*/
-/*    -webkit-transform: rotate(20deg);*/
-/*    -moz-transform: rotate(20deg);*/
-/*    -ms-transform: rotate(20deg);*/
-/*    -o-transform: rotate(20deg);*/
-/*    transform: rotate(20deg);*/
-/*}*/
 
 .navbar {
     opacity: 1;
@@ -199,4 +191,20 @@ footer {
     /*#logo-png {*/
     /*    max-height: 200px;*/
     /*}*/
+}
+
+@media (min-width: 992px) {
+    .modifiedBootstrap__my-lg-6 {
+        /*margin-top: 3rem !important;*/
+        /*margin-bottom: 3rem !important;*/
+        margin-top: 10rem !important;
+        margin-bottom: 10rem !important;
+    }
+
+    hr {
+        /*margin-top: 3rem !important;*/
+        /*margin-bottom: 3rem !important;*/
+        margin-top: 10rem !important;
+        margin-bottom: 10rem !important;
+    }
 }
