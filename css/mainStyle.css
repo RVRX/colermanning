@@ -21,6 +21,10 @@ nav {
     color: white;
 }
 
+.nav-link:hover {
+    color: #3e77aa !important;
+}
+
 .navbar-toggler {
 
 }
@@ -142,11 +146,21 @@ footer {
     border-color: #595959;
 }
 
-.btn-check:focus + .btn-primary, .btn-primary:focus {
+.btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:active:focus {
     color: #fff;
     background-color: #595959;
     border-color: #595959;
     box-shadow: 0 0 0 0.2rem rgba(101, 101, 101, 0.5);
+}
+
+.card-no-border {
+    border-color: transparent;
+}
+
+.card-add-border {
+    /*border-color: #3e77aa;*/
+    border: #3e77aa 1px solid;
+    border-top: transparent;
 }
 
 .modal-content {
@@ -227,7 +241,7 @@ footer {
 
 /*New Color Stuff*/
 .secondary {
-    color: rgba(62, 119, 170, 0.73) !important;
+    color: rgba(62, 119, 170, 0.84) !important;
 }
 
 .text-muted,#subheading,h4,i,h2 {
