@@ -255,3 +255,14 @@ a {
 .card-body {
     /*border-color: #3e77aa;*/
 }
+
+/*IE Bugs*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ .card-img-top {
+     max-height: 270px; /*Fixing weird (Bootstrap?) bug, where card images stretch hella far down*/
+ }
+}
+
+/*TODO
+   -ON Chrome/Edge, the right border of the "Current Projects" box isn't visible.
+*/
