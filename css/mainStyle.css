@@ -103,8 +103,15 @@ html {
     word-wrap: break-word;
     background-color: rgba(33, 37, 41, 0.27);
     background-clip: border-box;
-    /*border: 1px solid hsl(245, 60%, 47%);*/
+    border: 1px solid hsl(208, 47%, 45%);
     border-radius: 0.25rem;
+}
+
+.card-header {
+    /*padding: 0.5rem 1rem;*/
+    /*margin-bottom: 0;*/
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgb(62, 119, 170);
 }
 
 .navbar {
@@ -195,15 +202,11 @@ footer {
 
 @media (min-width: 768px) {
     .modifiedBootstrap__my-lg-6 {
-        /*margin-top: 3rem !important;*/
-        /*margin-bottom: 3rem !important;*/
         margin-top: 10rem !important;
         margin-bottom: 10rem !important;
     }
 
     hr {
-        /*margin-top: 3rem !important;*/
-        /*margin-bottom: 3rem !important;*/
         margin-top: 10rem !important;
         margin-bottom: 10rem !important;
     }
@@ -216,4 +219,18 @@ footer {
 .card {
     padding-left: 0;
     padding-right: 0;
+}
+
+/*New Color Stuff*/
+/*#3e77aa !important*/
+.text-muted,#subheading,h4,i,h2 {
+    color: #3e77aa !important;
+}
+
+a {
+    /*text-decoration-color: #3e77aa;*/
+}
+
+.card-body {
+    /*border-color: #3e77aa;*/
 }

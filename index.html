@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     <!--
     Libraries Used:
@@ -20,6 +21,7 @@
         - Animate.css
         - JQuery
         - FontAwesome
+        - Masonry
     -->
 </head>
 <body>
@@ -58,7 +60,7 @@ TODO
     <!--Hero Text-->
     <div class="hero-center" id="name">
         <h1 class="animate__animated animate__fadeIn animate__slow">Cole Manning</h1>
-        <p class="animate__animated animate__backInUp secondary">Subheading</p>
+        <p class="animate__animated animate__backInUp secondary" id="subheading">Student at Worcester Polytechnic Institute</p>
     </div>
     <a href="#about-anchorpoint">
         <div class="hero-bottom animate__animated  animate__backInUp">
@@ -72,6 +74,7 @@ TODO
 
 <!--Main Content-->
 <main role="main" class="container-fluid mt-5">
+    <!--About-->
     <span id="about-anchorpoint"></span>
     <div class="container" data-aos="fade-up" data-aos-duration="1000" id="about-container">
         <div class="row">
@@ -82,7 +85,7 @@ TODO
                 <p id="socials" class="text-center">
                     <a href="https://github.com/RVRX"><i class="fab fa-github mx-sm-3"></i></a>
                     <a href="https://www.linkedin.com/in/colemanning/"><i class="fab fa-linkedin-in mx-sm-3"></i></a>
-                    <a href="mailto:cmanning@wpi.edu"><i class="far fa-envelope mx-sm-3"></i></a>
+                    <a href="mailto:colemanning@yandex.com"><i class="far fa-envelope mx-sm-3"></i></a>
                 </p>
             </div>
         </div>
@@ -140,79 +143,74 @@ TODO
         <!--Website Cards-->
         <div class="container item my-lg-5">
             <h3 data-aos="fade-up">Websites</h3>
-            <div class="row">
+            <div class="row justify-content-start">
                 <!--ParkerProjects Card-->
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <img src="images/projects/parkerprojects/Screenshot_2020-08-06%20Parker%20Projects(1).png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="https://github.com/RVRX/ParkerProjects" class="no-style">Parkerprojects.info</a></h5>
-                        <h6 class="card-subtitle text-muted mb-2">2018 - 2019 (live on github)</h6>
-                        <p class="card-text">A web app to display my peer's Senior Projects.</p>
-                        <a class="btn btn-primary" data-toggle="modal" data-target="#parkerprojectsModal">Details</a>
+                <div class="col col-md-4">
+                    <div class="card m-2" data-aos="zoom-in">
+                        <img src="images/projects/parkerprojects/Screenshot_2020-08-06%20Parker%20Projects(1).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://rvrx.github.io/ParkerProjects/" class="no-style">Parkerprojects.info</a></h5>
+                            <h6 class="card-subtitle text-muted mb-2">2018 - 2019 (live on github)</h6>
+                            <p class="card-text">A web app to display my peer's Senior Projects. Made using the Twig template engine and Slim PHP framework.</p>
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#parkerprojectsModal">Details</a>
+                        </div>
                     </div>
                 </div>
+
                 <!--Skyborne.net Card-->
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <img src="images/projects/skyborne/SkyborneOverviewImage.png" class="card-img-top rounded-top" alt="Screenshot of Skyborne.net">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="https://skyborne.net" class="no-style">Skyborne.net</a></h5>
-                        <h6 class="card-subtitle text-muted mb-2">2015 - Present</h6>
-                        <p class="card-text">A Website for The Skyborne, a Guns of Icarus Online clan.</p>
-                        <a class="btn btn-primary" data-toggle="modal" data-target="#skyborneModal">Details</a>
+                <div class="col col-md-4">
+                    <div class="card m-2" data-aos="zoom-in">
+                        <img src="images/projects/skyborne/SkyborneOverviewImage.png" class="card-img-top rounded-top" alt="Screenshot of Skyborne.net">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://skyborne.net" class="no-style">Skyborne.net</a></h5>
+                            <h6 class="card-subtitle text-muted mb-2">2015 - Present</h6>
+                            <p class="card-text">A Website for The Skyborne, a Guns of Icarus Online clan.</p>
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#skyborneModal">Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <!--Filler Card-->
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="201" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="286px" height="201" fill="#868e96"></rect><text x="23%" y="50%" fill="#dee2e6" dy=".3em">More Coming Soon...</text></svg>
-                    <div class="card-body">
-                        <h5 class="card-title">More Projects Coming Soon</h5>
-<!--                        <h6 class="card-subtitle text-muted mb-2">date</h6>-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-<!--                        <a class="btn btn-primary" data-toggle="modal" data-target="#fillerModal">Details</a>-->
-                    </div>
-                </div>
-
-                <!--Filler Card-->
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Coming Soon...</text></svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Title</h5>
-                        <h6 class="card-subtitle text-muted mb-2">date</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p class="card-text"><small class="text-muted">Bottom Text Option</small></p>
-                        <a class="btn btn-primary" data-toggle="modal" data-target="#fillerModal">Details</a>
+                <!--Current Projects Card-->
+                <div class="col col-md-4">
+                    <div class="card m-2" data-aos="zoom-in">
+                        <div class="card-header">
+                            Current Projects
+                        </div>
+                        <div class="card-body">
+<!--                            <h5 class="card-title">More Projects Coming Soon</h5>-->
+                            <p class="card-text">I'm currently working as a volunteer worker for WPI's <a href="https://www.wpi.edu/academics/business/resources/small-business" target="_blank">Small Business Digitization Services</a>, working in a group to modernize and upgrade client's websites.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--Other Languages Cards-->
-        <div class="container item my-lg-5">
-            <h3>Other Languages</h3>
-            <div class="row">
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <div class="card-body">
-                        <h5 class="card-title">Mumble Image Resizer</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Java | 2020</h6>
-                        <p class="card-text">Resizes images to a certain length in Base64, and copies Mumble readable code to clipboard so that they can be sent over Mumble servers with small filesize limits.</p>
-                        <a href="#todo" class="card-link">source</a>
-                        <a href="#todo" class="card-link">download</a>
+        <div class="container item my-lg-5 pt-5">
+            <h3 class="aod-init aos-animate" data-aos="fade-up">Other Languages</h3>
+            <div class="row justify-content-start">
+                <div class="col m-2">
+                    <div class="card" data-aos="zoom-in">
+                        <div class="card-body">
+                            <h5 class="card-title">Mumble Image Resizer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Java | 2020</h6>
+                            <p class="card-text">Resizes images to a certain length in Base64, and copies Mumble readable code to clipboard so that they can be sent over Mumble servers with small filesize limits.</p>
+                            <a href="https://github.com/RVRX/ImageResizerBase64ForMumble" class="card-link" target="_blank">view on github</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card m-2" style="width: 18rem;" data-aos="zoom-in">
-                    <div class="card-body">
-                        <h5 class="card-title">Computronics tape-util</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Lua (Computercraft) | 2020</h6>
-                        <p class="card-text">A group of Utilities for tapes in the Minecraft mod, Computronics.</p>
-                        <a href="#todo" class="card-link">source</a>
-                        <a href="#todo" class="card-link">download</a>
+                <div class="col m-2">
+                    <div class="card" data-aos="zoom-in">
+                        <div class="card-body">
+                            <h5 class="card-title">Computronics tape-util</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lua (Computercraft) | 2020</h6>
+                            <p class="card-text">A group of Utilities for tapes in the Minecraft mod, Computronics.</p>
+                            <a href="https://github.com/RVRX/computronics-tape-util" class="card-link" target="_blank">view on github</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <hr/>
-        <!--Modals-->
-
     </div>
 </main>
 
