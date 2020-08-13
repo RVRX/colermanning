@@ -124,13 +124,17 @@ html {
     opacity: 0;
 }
 
-#socials {
+#socials,#resume {
     font-size: x-large;
 }
 
 footer {
     /*background-color: rgb(18, 18, 18);*/
     background-color: #161718;
+}
+
+.footer-header {
+    color: #3e77aa;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:hover + .btn-primary:focus {
@@ -222,7 +226,10 @@ footer {
 }
 
 /*New Color Stuff*/
-/*#3e77aa !important*/
+.secondary {
+    color: rgba(62, 119, 170, 0.73) !important;
+}
+
 .text-muted,#subheading,h4,i,h2 {
     color: #3e77aa !important;
 }
