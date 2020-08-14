@@ -161,6 +161,15 @@ footer {
     /*border-color: #3e77aa;*/
     border: #3e77aa 1px solid;
     border-top: transparent;
+    box-shadow: 0 0 10px #3e77aa;
+}
+
+.card-img-top {
+    /*box-shadow: 0px 0px 10px #3e77aa;*/
+    /*outline: 2px solid #3e77aa;*/
+    /*outline-offset: -2px;*/
+    /*position: relative;*/
+    /*z-index: -2;*/
 }
 
 .modal-content {
@@ -237,6 +246,7 @@ footer {
 .card {
     padding-left: 0;
     padding-right: 0;
+    box-shadow: 0 0 7px #3e77aa;
 }
 
 /*New Color Stuff*/
