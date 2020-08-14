@@ -246,7 +246,12 @@ footer {
 .card {
     padding-left: 0;
     padding-right: 0;
-    box-shadow: 0 0 7px #3e77aa;
+    box-shadow: 0 0 6px #3e77aa;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
 }
 
 /*New Color Stuff*/
