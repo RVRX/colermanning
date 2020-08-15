@@ -142,8 +142,8 @@ footer {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:hover + .btn-primary:focus {
-    background-color: #595959;
-    border-color: #595959;
+    background-color: #161718;
+    border-color: #3e77aa;
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:active:focus {
@@ -180,9 +180,10 @@ footer {
     pointer-events: auto;
     background-color: #121212;
     background-clip: padding-box;
-    border: 1px solid rgb(18, 18, 18);
+    border: 1px solid #3e77aa;
     border-radius: 0.3rem;
     outline: 0;
+    box-shadow: 0 0 5px #3e77aa;
 }
 
 .modal-header {
@@ -191,7 +192,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 1rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #3e77aa;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -246,7 +247,8 @@ footer {
 .card {
     padding-left: 0;
     padding-right: 0;
-    box-shadow: 0 0 6px #3e77aa;
+    box-shadow: 0 0 4px #3e77aa;
+    border-color: #3e77aa;
 }
 
 .card-footer {
