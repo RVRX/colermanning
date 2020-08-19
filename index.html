@@ -16,11 +16,21 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scrollify/jquery.scrollify.js"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".scrollify-active",
+                offset : -30,
+            });
+        });
+    </script>
     <!--
     Libraries Used:
         - Bootstrap
@@ -47,7 +57,7 @@ TODO
 -->
 
 <!--Header-->
-<header class="hero">
+<header class="hero scrollify-active">
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation">
         <div class="container-fluid">
@@ -82,10 +92,10 @@ TODO
 </header>
 
 <!--Main Content-->
-<main role="main" class="container-fluid mt-5">
+<main role="main" class="container-fluid mt-5 mb-5">
     <!--About-->
     <span id="about-anchorpoint"></span>
-    <div class="container aos-init" data-aos="fade-up" data-aos-duration="1000" id="about-container">
+    <div class="container aos-init scrollify-active" data-aos="fade-up" data-aos-duration="1000" id="about-container">
         <div class="row">
             <div class="col" id="head-shot-col"><img src="images/prof-pic_HighRez.png" alt="Head Shot of Cole Manning." class="img-fluid rounded-lg px-lg-5"></div>
             <div class="col">
@@ -103,7 +113,7 @@ TODO
     </div>
     <!--Experience-->
     <span id="xp-anchorpoint"></span>
-    <div class="container" id="xp-container">
+    <div class="container scrollify-active" id="xp-container">
         <h2 id="xp" data-aos="fade-up" class="aos-init">Job Experience</h2>
 
         <div class="container item my-5 aos-init" data-aos="fade-right">
@@ -125,7 +135,7 @@ TODO
     </div>
     <!--Education-->
     <span id="edu-anchorpoint"></span>
-    <div class="container aos-init" data-aos="fade-up" data-aos-duration="1000" id="edu-container">
+    <div class="container aos-init scrollify-active" data-aos="fade-up" data-aos-duration="1000" id="edu-container">
         <h2 id="edu">Education</h2>
 
         <div class="container item my-lg-5" data-aos="fade-left">
@@ -147,7 +157,7 @@ TODO
     </div>
     <!--Projects-->
     <span id="projects-anchorpoint"></span>
-    <div class="container aos-init" data-aos="fade-up" data-aos-duration="1000" id="projects-container">
+    <div class="container aos-init scrollify-active" data-aos="fade-up" data-aos-duration="1000" id="projects-container">
         <h2 id="projects">Independent Projects</h2>
 
         <!--Website Cards-->
@@ -230,7 +240,7 @@ TODO
                 </div>
             </div>
         </div>
-        <hr/>
+<!--        <hr/>-->
     </div>
 </main>
 
@@ -323,8 +333,7 @@ TODO
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.esm.js"></script>
 <script src="js/bootstrap.js"></script>
-<!--JQuery-->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <!--AOS Scripts-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--Initialize AOS Library-->
