@@ -14,5 +14,10 @@
     <orderEntry type="library" name="jquery-1.11.3" level="application" />
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="masonry" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="masonry" level="application" />
+    <orderEntry type="library" name="jquery-1.11.3" level="application" />
   </component>
 </module>
