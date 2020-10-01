@@ -183,7 +183,7 @@ footer {
 }
 
 /*Remove left sidebar when under 767px*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     #head-shot-col {
         display: none;
     }
@@ -231,4 +231,10 @@ footer {
  .card-img-top {
      max-height: 270px; /*Fixing weird (Bootstrap?) bug, where card images stretch very far down*/
  }
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    /*max-width: none !important;*/
 }
