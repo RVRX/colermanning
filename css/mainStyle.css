@@ -182,6 +182,13 @@ footer {
     color: white;
 }
 
+/*Remove left sidebar when under 767px*/
+@media only screen and (max-width: 767px) {
+    #head-shot-col {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .modifiedBootstrap__my-lg-6 {
         margin-top: 10rem !important;
