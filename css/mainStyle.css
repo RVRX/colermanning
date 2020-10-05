@@ -188,6 +188,10 @@ footer {
     #head-shot-col {
         display: none;
     }
+
+    .container {
+        overflow-x: hidden !important; /*fixes overflow on small screens without ruining animations on larger screens*/
+    }
 }
 
 @media (min-width: 768px) {
